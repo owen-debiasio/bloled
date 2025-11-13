@@ -7,7 +7,8 @@ My Hyprland dot/config files
 ---
 # Themeing
 ## Universal
-- **QT/GTK**: [Orchis Dark w/ Orchis Dark Kvantum theme](https://github.com/vinceliuice/Orchis-theme)
+- **QT/GTK**: [Orchis Dark](https://github.com/vinceliuice/Orchis-theme) w/ [Orchis Dark kvantum](https://store.kde.org/p/1458909/)
+
 - **Icons**: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 ## [VSCodium](https://github.com/VSCodium/vscodium)
 - **Theme**: [Papirus](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
