@@ -1,6 +1,3 @@
-[submodule "home/user/local/share/zzed/extensions/installed"]
-	path = home/user/local/share/zzed/extensions/installed
-	url = https://github.com/owen-debiasio/bloled.git
 [submodule "home/user/local/share/zed/extensions/installed"]
 	path = home/user/local/share/zed/extensions/installed
 	url = https://github.com/owen-debiasio/bloled.git
