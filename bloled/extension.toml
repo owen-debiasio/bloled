@@ -1,0 +1,19 @@
+id = "bloled"
+name = "bloled"
+version = "0.1.0"
+schema_version = 0
+description = "A pure OLED theme for Zed with blue text. Based on Yogi Amoled."
+repository = "https://github.com/owen-debiasio/bloled"
+authors = ["Owen Debiasio <owen.debiasio@gmail.com>"]
+themes = ["themes/bloled.json"]
+languages = []
+
+[lib]
+
+[grammars]
+
+[language_servers]
+
+[slash_commands]
+
+[indexed_docs_providers]
