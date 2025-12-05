@@ -1,5 +1,5 @@
 # a-blurry-mess-gtk
-My Hyprland dot/config files
+My Hyprland dot/config filesa
 
 [Original theme](https://github.com/owen-debiasio/a-blurry-mess) **(No longer maintained)**
 
