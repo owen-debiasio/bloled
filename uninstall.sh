@@ -1,6 +1,8 @@
 #!/bin/bash
+set -euo pipefail
 
-echo "bloled will now be uninstalled."
+echo "bloled will now be uninstalled. Press Enter to continue..."
+
 if [ -t 0 ]; then
     read -r
 else
