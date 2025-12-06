@@ -1,29 +1,33 @@
 #!/bin/bash
-
-set -e
+set -euo pipefail
 
 clear
+echo -e "bloled will now install.\nPress Enter to continue...\n"
 
-echo -e "bloled will now install.\nPress enter to continue...\n"
-read
+# Make the pause work even with curl | bash
+if [ -t 0 ]; then
+    read -r
+else
+    read -r < /dev/tty
+fi
 
+REPO="https://github.com/owen-debiasio/bloled.git"
+TMP_DIR="$(mktemp -d)"
 DEST="$HOME/.local/share/zed/extensions/installed/bloled"
 
-echo "Copying files..."
+echo "Cloning repo..."
+git clone --depth=1 "$REPO" "$TMP_DIR"
 
+echo "Installing files..."
 if [ -d "$DEST" ]; then
     rm -rf "$DEST"
-    echo "Removed old version."
-else
-    echo "No previous install found, skipping removal."
+    echo "Removed previous install."
 fi
+
 mkdir -p "$HOME/.local/share/zed/extensions/installed/"
+cp -r "$TMP_DIR/bloled" "$DEST"
 
-# Copy the folder next to the script
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-
-git clone https://github.com/owen-debiasio/bloled.git
-
-cp -r "$SCRIPT_DIR/bloled" "$HOME/.local/share/zed/extensions/installed/"
+echo "Cleaning up..."
+rm -rf "$TMP_DIR"
 
 echo "Done!"
