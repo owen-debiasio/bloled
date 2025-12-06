@@ -21,6 +21,9 @@ mkdir -p "$HOME/.local/share/zed/extensions/installed/"
 
 # Copy the folder next to the script
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+git clone https://github.com/owen-debiasio/bloled.git
+
 cp -r "$SCRIPT_DIR/bloled" "$HOME/.local/share/zed/extensions/installed/"
 
 echo "Done!"
