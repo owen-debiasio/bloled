@@ -1,6 +1,6 @@
 id = "bloled"
 name = "bloled"
-version = "0.1.1"
+version = "0.1.2"
 schema_version = 0
 description = "A pure OLED theme for Zed with blue text. Based on Yogi Amoled."
 repository = "https://github.com/owen-debiasio/bloled"
